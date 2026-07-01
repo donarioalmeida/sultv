@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+*.egg-info/
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Icon
+Thumbs.db
+
+# Local development
+.env
+.env.local
+.env.*.local
+*.log
+
+# Claude Code
+.claude/
+sessions/
+
+# State/outputs
+state/
+logs/
+outputs/
+
+# Credenciais
+credentials/
+*.pem
+*.key
+
+# Large files
+*.pdf
+*.mp4
+*.mov
+*.zip
