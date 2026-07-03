@@ -29,8 +29,12 @@ Thumbs.db
 .env.*.local
 *.log
 
-# Claude Code
-.claude/
+# Claude Code (mantém settings locais ignorados; versiona só o skill do radar)
+.claude/*
+!.claude/skills/
+.claude/skills/*
+!.claude/skills/sultv-radar-pauta-diaria/
+!.claude/skills/sultv-radar-pauta-diaria/**
 sessions/
 
 # State/outputs

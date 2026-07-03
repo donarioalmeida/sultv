@@ -1,0 +1,9 @@
+requests
+Pillow
+feedparser
+beautifulsoup4
+python-dotenv
+anthropic
+google-auth
+google-auth-oauthlib
+gspread
