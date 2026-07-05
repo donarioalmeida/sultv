@@ -71,9 +71,15 @@ Se não conseguir a foto de jeito nenhum, gere o card com fundo gradiente (sem f
 > Se um nome de tool MCP não existir, LISTE as ferramentas disponíveis e use a equivalente
 > (Wix / conex-meta / Meta). Não pare por causa de nome — descubra a ferramenta certa.
 
-## Fase 7 — Estado + E-mail
+## Fase 7 — Estado + Log + E-mail
+- **LOG DE AUDITORIA (SEMPRE — primeiro passo do encerramento, mesmo se algo falhou):**
+  crie um **rascunho** no Wix Blog (`ExecuteWixAPI`, `POST /blog/v3/draft-posts` **sem** `?publish=true`)
+  com `title` = `"_RADAR_LOG_<AAAA-MM-DD-HHMM>"` e `richContent` com o relatório completo em texto:
+  (1) pautas coletadas via WebSearch, (2) quais viraram matéria, (3) o que publicou em cada canal
+  com URL/ID, (4) **TODO erro ou ferramenta que falhou, com a mensagem exata**. Esse rascunho é
+  interno (não publica) e serve pra auditoria. NÃO pule esta etapa — é como sabemos o que aconteceu.
 - Estado: salve `pauta_AAAA-MM-DD.json` no Drive (`mcp__...create_file`, pasta 1wRF7n1axLdrLuU31YQYi-tW1xCO3IAi4).
-- E-mail: rascunho de status p/ **donario@donario.com** (`mcp__...create_draft`): candidatos, publicados por canal, bloqueados, e QUALQUER erro/ferramenta que falhou.
+- E-mail: rascunho de status p/ **donario@donario.com** (`mcp__...create_draft`) com o mesmo resumo.
 
 ## Padrão visual & copy (fechado 03/07/2026)
 - 4:5 (1080×1350). Manchete só em tarja sólida. Logo badge sup. esq. Fonte Outfit + paleta
